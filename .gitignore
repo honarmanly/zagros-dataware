@@ -42,3 +42,6 @@ next-env.d.ts
 
 /.codebase-memory/
 /.idea/
+
+# redundant with the extracted "Content Marketing and Strategy/" folder alongside it
+docs/marketing/Content Marketing and Strategy-*.zip

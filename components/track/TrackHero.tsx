@@ -27,11 +27,11 @@ export default function TrackHero({ track }: { track: Track }) {
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link
-              href={`mailto:${site.email}?subject=${encodeURIComponent(`${track.name} inquiry`)}`}
+              href={`mailto:${site.email}?subject=${encodeURIComponent(track.flagshipOffer.name)}`}
               className="rounded-md px-8 py-3 font-semibold text-white transition-colors"
               style={{ backgroundColor: track.accent }}
             >
-              Start a Conversation
+              {track.flagshipOffer.ctaLabel}
             </Link>
             <Link
               href="#capabilities"

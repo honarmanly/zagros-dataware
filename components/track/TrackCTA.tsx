@@ -9,11 +9,11 @@ export default function TrackCTA({ track }: { track: Track }) {
     >
       <div className="mx-auto max-w-2xl">
         <h2 className="text-3xl font-bold sm:text-4xl">
-          Ready to start with {track.shortName}?
+          {track.flagshipOffer.ctaLine}
         </h2>
         <p className="mt-4 text-white/90">
-          Tell us where things stand today, and we&apos;ll suggest the right
-          first step.
+          Start with a {track.flagshipOffer.name} — tell us where things
+          stand today, and we&apos;ll suggest the right first step.
         </p>
         <div className="mt-8">
           <ContactChannels />

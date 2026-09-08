@@ -1,5 +1,15 @@
 export type TrackId = "enterprise" | "startup" | "local";
 
+export interface FlagshipOffer {
+  name: string;
+  hook: string;
+  promise: string;
+  scope: string[];
+  deliverables: string[];
+  ctaLabel: string;
+  ctaLine: string;
+}
+
 export interface Track {
   id: TrackId;
   href: string;
@@ -10,6 +20,7 @@ export interface Track {
   accent: string;
   accentDark: string;
   capabilities: { title: string; description: string }[];
+  flagshipOffer: FlagshipOffer;
 }
 
 export const tracks: Record<TrackId, Track> = {
@@ -45,6 +56,26 @@ export const tracks: Record<TrackId, Track> = {
           "Vendor-neutral ERP selection, configuration, and rollout support that keeps the system in service of the redesigned process — not the other way around.",
       },
     ],
+    flagshipOffer: {
+      name: "Operational & Process Friction Assessment",
+      hook: "Do you need an AI agent — or a streamlined business process?",
+      promise:
+        "A diagnostic that maps where process friction is actually costing you time and revenue, before recommending any software, automation, or AI investment.",
+      scope: [
+        "End-to-end value stream mapping across departments, systems, and handoffs",
+        "Friction and bottleneck audit — delays, duplication, manual approval chokepoints",
+        "System integration review across your ERP, CRM, and core applications",
+        "Automation and AI readiness check — where it pays off, where it doesn't",
+      ],
+      deliverables: [
+        "A Process Opportunity Map ranked by severity and revenue impact",
+        "An Efficiency Gap Report quantifying cycle time and manual-effort cost",
+        "A phased Transformation Roadmap — quick wins, integration work, and automation projects",
+      ],
+      ctaLabel: "Request a Process Friction Assessment",
+      ctaLine:
+        "Identify where process bottlenecks are costing your business time and revenue.",
+    },
   },
   startup: {
     id: "startup",
@@ -78,6 +109,26 @@ export const tracks: Record<TrackId, Track> = {
           "Strategyzer's Value Proposition and Business Model Canvas methods, used to map customer jobs, pains, and gains against what's actually being offered — before it's built.",
       },
     ],
+    flagshipOffer: {
+      name: "Startup Opportunity & Validation Sprint",
+      hook: "Are you building on a verified opportunity — or an assumption?",
+      promise:
+        "Turn unverified assumptions into customer evidence before committing real engineering budget to build the wrong thing.",
+      scope: [
+        "Hypothesis and assumption mapping across desirability, feasibility, and viability",
+        "A risk matrix ranking which assumptions could invalidate the venture if wrong",
+        "Structured customer interviews and landing-page smoke tests",
+        "A competitive differentiation check against real alternatives, not just direct rivals",
+      ],
+      deliverables: [
+        "A Validation Scorecard of customer interest and willingness-to-pay signals",
+        "An Assumption Map classifying each bet as Verified, Refuted, or Inconclusive",
+        "A clear recommendation: proceed to a lean MVP, pivot the value proposition, or hold off",
+      ],
+      ctaLabel: "Request a Validation Sprint",
+      ctaLine:
+        "Validate your core business assumptions before writing your first line of code.",
+    },
   },
   local: {
     id: "local",
@@ -111,6 +162,26 @@ export const tracks: Record<TrackId, Track> = {
           "Small, regular improvements informed by what visitors actually do on the site, rather than a one-off launch that's never revisited.",
       },
     ],
+    flagshipOffer: {
+      name: "Digital Growth Opportunity Assessment",
+      hook: "Your next customer may already be looking for you — can they find you?",
+      promise:
+        "A diagnostic across positioning, your website, local search, and content to find where the customer journey is actually breaking, before recommending a fix.",
+      scope: [
+        "Positioning and value proposition — is it clear who you help and why",
+        "Website and conversion path — from visit to call, booking, or sale",
+        "Search, local discoverability, and content/social presence",
+        "Competitors, customer segments, and channels you may be missing",
+      ],
+      deliverables: [
+        "A prioritized map of where you're losing customers in the discovery-to-purchase journey",
+        "A clear read on which interventions are worth it — and which aren't, yet",
+        "Recommended next steps, whether that's a new site, a fix to the existing one, or nothing at all",
+      ],
+      ctaLabel: "Request a Growth Opportunity Assessment",
+      ctaLine:
+        "Looking for your next growth opportunity? Let's examine where it could come from.",
+    },
   },
 };
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { tracks } from "@/lib/tracks";
 import TrackHero from "@/components/track/TrackHero";
+import FlagshipOffer from "@/components/track/FlagshipOffer";
 import TrackCapabilities from "@/components/track/TrackCapabilities";
 import SelectedWork from "@/components/track/SelectedWork";
 import PortfolioShowcase from "@/components/track/PortfolioShowcase";
@@ -19,6 +20,7 @@ export default function WebDesignPage() {
   return (
     <>
       <TrackHero track={track} />
+      <FlagshipOffer track={track} />
       <TrackCapabilities track={track} />
       <SelectedWork />
       <PortfolioShowcase />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { tracks } from "@/lib/tracks";
 import TrackHero from "@/components/track/TrackHero";
+import FlagshipOffer from "@/components/track/FlagshipOffer";
 import TrackCapabilities from "@/components/track/TrackCapabilities";
 import EngagementTracks from "@/components/pricing/EngagementTracks";
 import RelatedContent from "@/components/track/RelatedContent";
@@ -17,6 +18,7 @@ export default function StartupsPage() {
   return (
     <>
       <TrackHero track={track} />
+      <FlagshipOffer track={track} />
       <TrackCapabilities track={track} />
       <EngagementTracks
         trackIds={["startup"]}

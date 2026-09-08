@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { tracks } from "@/lib/tracks";
 import TrackHero from "@/components/track/TrackHero";
+import FlagshipOffer from "@/components/track/FlagshipOffer";
 import TrackCapabilities from "@/components/track/TrackCapabilities";
 import Sectors from "@/components/Sectors";
 import EngagementTracks from "@/components/pricing/EngagementTracks";
@@ -18,6 +19,7 @@ export default function EnterprisePage() {
   return (
     <>
       <TrackHero track={track} />
+      <FlagshipOffer track={track} />
       <TrackCapabilities track={track} />
       <Sectors />
       <EngagementTracks
