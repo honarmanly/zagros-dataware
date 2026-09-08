@@ -34,6 +34,14 @@ Left as recommendations, not yet built:
 - [`social-posts.md`](./social-posts.md) — Telegram/WhatsApp intro posts,
   English and Farsi, ready to copy-paste into groups or DMs.
 
+## Content Calendar
+
+[`content-calendar/`](./content-calendar/) — the 90-Day Content Calendar
+turned into actual dated, ready-to-post copy, plus
+[`content-calendar/month-1-tracker.csv`](./content-calendar/month-1-tracker.csv)
+to track what's drafted vs. published through September 2026. Read
+`content-calendar/README.md` first.
+
 ## Ready-to-use assets
 
 All in [`./assets/`](./assets/):
